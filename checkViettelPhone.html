@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function checkViettelPhone (str) {
+        let regex = /^086\d{7}|09[6-8]\d{7}|03[2-9]\d{7}$/;
+        if(regex.test(str)){
+            return true;
+        }
+        return false;
+    }
+    let phone = "0377580555";
+    console.log(checkViettelPhone(phone));
+
+    phone = "0946632888";
+    console.log(checkViettelPhone(phone));
+</script>
+
+</body>
+</html>
